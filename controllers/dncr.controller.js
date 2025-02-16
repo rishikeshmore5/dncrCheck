@@ -19,7 +19,7 @@ export const checkStatus =  (req,res) => {
     try {
         if(req.rawHeaders.includes("X-Api-Key")&&req.rawHeaders.includes("a1c976b0966546239d43ac9b0e7cf521")){
         const {accountNumber} = req.body
-        var defaultres = "Not Found"
+        var defaultres = false;
         var accounts = data.accounts;
         accounts.forEach(element => {
             if(element.accountNumber==accountNumber){
