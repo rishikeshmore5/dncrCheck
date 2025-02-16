@@ -41,7 +41,7 @@ export const checkStatus =  (req,res) => {
 
 var data = {
     "accounts":[
-        {"accountNumber":"8208443448","dncrStatus":"BLOCKED"},
-        {"accountNumber":"9765340654","dncrStatus":"BLOCKED"},
+        {"accountNumber":"8208443448","dncrStatus":true},
+        {"accountNumber":"9325397754","dncrStatus":false},
     ]
 }
