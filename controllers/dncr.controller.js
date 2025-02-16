@@ -19,7 +19,7 @@ export const checkStatus =  (req,res) => {
     try {
         if(req.rawHeaders.includes("X-Api-Key")&&req.rawHeaders.includes("a1c976b0966546239d43ac9b0e7cf521")){
         const {accountNumber} = req.body
-        var defaultres = false;
+        var defaultres = "BLOCKED";
         var accounts = data.accounts;
         accounts.forEach(element => {
             if(element.accountNumber==accountNumber){
@@ -41,7 +41,7 @@ export const checkStatus =  (req,res) => {
 
 var data = {
     "accounts":[
-        {"accountNumber":"8208443448","dncrStatus":true},
-        {"accountNumber":"9325397754","dncrStatus":false},
+        {"accountNumber":"8208443448","dncrStatus":"UNBLOCKED"},
+        {"accountNumber":"9325397754","dncrStatus":"BLOCKED"},
     ]
 }
