@@ -1,5 +1,5 @@
 import express from "express";
-import { checkStatus, getAccounts } from "../controllers/dncr.controller.js";
+import { checkStatus, getAccounts,DNCRcheckStatus } from "../controllers/dncr.controller.js";
 
 const router = express.Router();
 
