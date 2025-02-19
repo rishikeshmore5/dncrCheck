@@ -7,4 +7,6 @@ router.get("/getAccounts", getAccounts)
 
 router.post("/checkStatus", checkStatus)
 
+router.post("/DNCRcheckStatus", DNCRcheckStatus)
+
 export default router;
